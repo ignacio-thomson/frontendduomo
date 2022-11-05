@@ -1,3 +1,5 @@
+El Script para generar la tabla en la base de datos, se encuentra en la carpeta assets.
+
 # Frontendduomo
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.8.

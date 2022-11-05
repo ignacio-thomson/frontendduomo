@@ -1,0 +1,74 @@
+
+<div class="container my-5">
+    <div class="d-flex justify-content-center">
+        <h2>Editar registro</h2>
+    </div>
+</div>
+
+<div class="container">
+    <form  action="" id="personaform">
+            <div class="row">
+            <div class="mb-3 col">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="nombre" name="nombre" [(ngModel)]="personaActual.nombre">
+            </div>
+            <div class="mb-3 col">
+                <label for="apellido" class="form-label">Apellido</label>
+                <input type="text" class="form-control" id="apellido" name="apellido" [(ngModel)]="personaActual.apellido">
+            </div>
+        </div>
+        <div class="row">
+            <div class="mb-3 col">
+                <label for="fechaNacimiento" class="form-label">Fecha de nacimiento</label>
+                <input type="text" class="form-control" id="fechaNacimiento" name="fechaNacimiento" [(ngModel)]="personaActual.fechaNacimiento">
+            </div>
+            <div class="mb-3 col">
+                <label for="telefono" class="form-label">Telefono</label>
+                <input type="text" class="form-control" id="telefono" name="telefono" [(ngModel)]="personaActual.telefono">
+            </div>  
+        </div>    
+      </form>
+
+        <div class="row">
+            <div class="mb-3 col">
+                <label for="region" class="form-label">Region</label>
+                <select type="text" class="form-select" id="region" name="region" [(ngModel)]="personaActual.region" form="personaform">
+                    <option value="Arica y Parinacota">Arica y Parinacota</option>
+                    <option value="Tarapacá">Tarapacá</option>
+                    <option value="Antofagasta">Antofagasta</option>
+                    <option value="Atacama">Atacama</option>
+                    <option value="Coquimbo">Coquimbo</option>
+                    <option value="Valparaíso">Valparaíso</option>
+                    <option value="Libertador Bernardo O'higgins">Libertador Bernardo O'higgins</option>
+                    <option value="Maule">Maule</option>
+                    <option value="Ñuble">Ñuble</option>
+                    <option value="Biobío">Biobío</option>
+                    <option value="La Araucanía">La Araucanía</option>
+                    <option value="Los Ríos">Los Ríos</option>
+                    <option value="Los Lagos">Los Lagos</option>
+                    <option value="Aysén">Aysén</option>
+                    <option value="Magallanes">Magallanes</option>
+                    <option value="Metropolitana">Metropolitana</option>
+                </select>
+            </div>
+
+            <div class="mb-3 col">
+                <label for="comuna" class="form-label">Comuna</label>
+                <input type="text" class="form-control" id="comuna" name="comuna" [(ngModel)]="personaActual.comuna" form="personaform">
+            </div>
+        </div>
+
+        <div class="mb-3">
+            <div class="d-flex justify-content-end">
+                <button type="submit" class="btn btn-dark" (click)="guardar()" form="personaForm">Editar</button>
+            </div>
+        </div>
+</div>
+
+<div class="container">
+    <div class="mb-5">
+      <div class="d-flex justify-content-center">
+        <img class="w-50" src="./assets/img/undraw_My_password_re_ydq7.png" alt="">
+      </div>
+    </div>
+</div>

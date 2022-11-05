@@ -1,0 +1,56 @@
+<div class="container my-5">
+    <div class="d-flex justify-content-center">
+        <h2>Añadir personas a la base de datos</h2>
+    </div>
+</div>
+
+<div class="container">
+    <form  action="" id="personaform">
+            <div class="row">
+            <div class="mb-3 col">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="nombre" name="nombre" [(ngModel)]="personaNueva.nombre">
+            </div>
+            <div class="mb-3 col">
+                <label for="apellido" class="form-label">Apellido</label>
+                <input type="text" class="form-control" id="apellido" name="apellido" [(ngModel)]="personaNueva.apellido">
+            </div>
+        </div>
+        <div class="row">
+            <div class="mb-3 col">
+                <label for="fechaNacimiento" class="form-label">Fecha de nacimiento</label>
+                <input type="text" class="form-control" id="fechaNacimiento" name="fechaNacimiento" [(ngModel)]="personaNueva.fechaNacimiento">
+            </div>
+            <div class="mb-3 col">
+                <label for="telefono" class="form-label">Telefono</label>
+                <input type="text" class="form-control" id="telefono" name="telefono" [(ngModel)]="personaNueva.telefono">
+            </div>  
+        </div>    
+      </form>
+
+        <div class="row">
+            <div class="mb-3 col">
+                <label for="region" class="form-label">Region</label>
+                <select type="text" class="form-select" id="regiones" name="region" [(ngModel)]="personaNueva.region" form="personaform"></select>
+            </div>
+
+            <div class="mb-3 col">
+                <label for="comuna" class="form-label">Comuna</label>
+                <select type="text" class="form-select" id="comunas" name="comuna" [(ngModel)]="personaNueva.comuna" form="personaform"></select>
+            </div>
+        </div>
+
+        <div class="mb-3">
+            <div class="d-flex justify-content-end">
+                <button type="submit" class="btn btn-dark" (click)="agregarPersona()" form="personaForm">Agregar</button>
+            </div>
+        </div>
+</div>
+
+<div class="container">
+    <div class="mb-5">
+      <div class="d-flex justify-content-center">
+        <img class="w-50" src="./assets/img/undraw_Creation_process_re_kqa9.png" alt="">
+      </div>
+    </div>
+</div>

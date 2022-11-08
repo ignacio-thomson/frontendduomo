@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Persona, PersonaService } from 'src/app/Servicio/persona.service';
 
+declare function RellenarLista():any;
+
 @Component({
   selector: 'app-agregar',
   templateUrl: './agregar.component.html',
@@ -22,6 +24,7 @@ export class AgregarComponent implements OnInit {
   constructor(private personaService: PersonaService, private router: Router) { }
 
   ngOnInit(): void {
+    RellenarLista();
   }
 
   agregarPersona(){

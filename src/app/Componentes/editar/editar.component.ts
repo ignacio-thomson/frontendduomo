@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Persona, PersonaService } from 'src/app/Servicio/persona.service';
 
+declare function RellenarLista():any;
+
 @Component({
   selector: 'app-editar',
   templateUrl: './editar.component.html',
@@ -30,6 +32,7 @@ export class EditarComponent implements OnInit {
       res=>{this.personaActual = res;},
       err=>console.log(err)
     )
+    RellenarLista();
   }
 
   guardar(){

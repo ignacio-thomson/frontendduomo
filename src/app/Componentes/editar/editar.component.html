@@ -32,30 +32,13 @@
         <div class="row">
             <div class="mb-3 col">
                 <label for="region" class="form-label">Region</label>
-                <select type="text" class="form-select" id="region" name="region" [(ngModel)]="personaActual.region" form="personaform">
-                    <option value="Arica y Parinacota">Arica y Parinacota</option>
-                    <option value="Tarapacá">Tarapacá</option>
-                    <option value="Antofagasta">Antofagasta</option>
-                    <option value="Atacama">Atacama</option>
-                    <option value="Coquimbo">Coquimbo</option>
-                    <option value="Valparaíso">Valparaíso</option>
-                    <option value="Libertador Bernardo O'higgins">Libertador Bernardo O'higgins</option>
-                    <option value="Maule">Maule</option>
-                    <option value="Ñuble">Ñuble</option>
-                    <option value="Biobío">Biobío</option>
-                    <option value="La Araucanía">La Araucanía</option>
-                    <option value="Los Ríos">Los Ríos</option>
-                    <option value="Los Lagos">Los Lagos</option>
-                    <option value="Aysén">Aysén</option>
-                    <option value="Magallanes">Magallanes</option>
-                    <option value="Metropolitana">Metropolitana</option>
-                </select>
+                <select type="text" class="form-select" id="regiones" name="region" [(ngModel)]="personaActual.region" form="personaform"></select>
             </div>
 
             <div class="mb-3 col">
                 <label for="comuna" class="form-label">Comuna</label>
-                <input type="text" class="form-control" id="comuna" name="comuna" [(ngModel)]="personaActual.comuna" form="personaform">
-            </div>
+                <select type="text" class="form-select" id="comunas" name="comuna" [(ngModel)]="personaActual.comuna" form="personaform"></select>
+            </div> 
         </div>
 
         <div class="mb-3">
